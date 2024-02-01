@@ -1,4 +1,4 @@
 # COMP3015
-Programacion Web con Base de Datos
+Programacion Web con __Base de Datos__
 
-Autor : Emanuel Franco Ruiz
+Autor: Ema
