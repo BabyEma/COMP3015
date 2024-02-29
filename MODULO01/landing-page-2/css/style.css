@@ -8,14 +8,21 @@ body{
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding: 20px;  
-    background-color: azure;
+    background-color: rgb(157, 255, 255);
 }
 
-#state-desing{
-
+#state-design{
     display: grid;
-    grid-template-areas: 
-        "h1 h1 h1"
-        "article article article";
-    grid-template-columns: 1fr 1fr 1fr;
+}       
+#state-design h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+article img{
+    width: 100%;
+}
+@media (max-width: 768px){
+    #state-design{
+        display: block;
+    }
 }
