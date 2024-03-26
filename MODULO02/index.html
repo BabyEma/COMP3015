@@ -2,22 +2,36 @@
 <html lang="en">
 <head>
 <title>Ejemplo de formulario sencillo</title>
-</head>
+<link rel="stylesheet">
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 <body>
 <h3>Formulario muy sencillo</h3>
 <form action="manejarDatos.php" method="post">
-Escribe tu nombre:
+  <label for="nombre">username</label>
 <input type="text" name="nombre" value="" />
-<br/>
-Password:
+</br>
+
+<label for="Password">Password</label>
  <input type="text" name="Nombre" value="" size="10"  maxlength="7">
 </br>
-<input type="checkbox" name="fruta[]" value="Toronja">
-<label for="Toronja">Toronja</label>
-<input type="checkbox" name="fruta[]" value="Guineo">
-<label for="Guineo">Guineo</label>
-<input type="checkbox" name="fruta[]" value="Aguacate">
-<label for="Aguacate">Aguacate</label>
+
+  <input type="checkbox" name="fruta[]" value="Toronja">
+  <label for="Toronja">Toronja</label>
+  <input type="checkbox" name="fruta[]" value="Guineo">
+  <label for="Guineo">Guineo</label>
+  <input type="checkbox" name="fruta[]" value="Aguacate">
+  <label for="Aguacate">Aguacate</label>
+
+</br>
+<select class="form-select form-select-sm" aria-label="Small select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
 </br>
 <input type="submit" class="btn btn-primary" value="Enviar"/>
   </div>
